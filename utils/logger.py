@@ -75,7 +75,7 @@ if QT_AVAILABLE:
                 self.text_edit.insertPlainText(message_part + "\n")
 
             # Scroll to bottom
-            scrollbar = self.text_edit.verticalScrollBar()
+            scrollbar = self.text_edit.verticalScrollBar() 
             scrollbar.setValue(scrollbar.maximum())
 
 
