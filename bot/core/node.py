@@ -96,7 +96,7 @@ class Grass(GrassWs, GrassRest, FailureCounter):
             try:
                 await self.connection_handler()
 
-                await self.auth_to_extension(browser_id, user_id)
+                await self.auth_to_extension(browser_id, user_id) 
 
                 if NODE_TYPE != "2x":
                     await self.handle_http_request_action()
