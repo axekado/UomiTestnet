@@ -9,7 +9,7 @@ try:
     from PySide6.QtGui import QColor
     from PySide6.QtCore import QObject, Signal, Slot
     QT_AVAILABLE = True
-except ImportError:
+except ImportError: 
     QT_AVAILABLE = False
 
 # Rest of the code wrapped in appropriate checks
