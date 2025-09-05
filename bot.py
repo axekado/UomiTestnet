@@ -53,7 +53,7 @@ async def main():
                 if word:
                     secret_words.append(word)
                 else:
-                    break 
+                    break
 
         accounts = await Accounts().get_accounts()
 
@@ -67,6 +67,7 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
+
 
 
 
