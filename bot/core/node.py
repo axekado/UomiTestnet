@@ -174,7 +174,7 @@ class Grass(GrassWs, GrassRest, FailureCounter):
                 pass
             elif proxy_score >= min_score:
                 self.proxy_score = proxy_score
-                logger.success(f"{self.id} | Proxy score: {self.proxy_score}")
+                logger.success(f"{self.id} | Proxy score: {self.proxy_score}") 
                 return True
             else:
                 raise LowProxyScoreException(f"{self.id} | Too low proxy score: {proxy_score} for {self.proxy}. Retrying...")
